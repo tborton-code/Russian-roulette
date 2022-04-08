@@ -3,11 +3,11 @@
         return Math.floor(Math.random() * max);
       }
     //Sound variables
-    const clickSound = new Audio("../sounds/click.mp3");
-    const loadSound = new Audio("../sounds/loading.mp3");
-    const emptySound = new Audio("../sounds/unload.mp3");
-    const spinSound = new Audio("../sounds/revolver-spin.mp3");
-    const shotSound = new Audio("../sounds/gunshot.mp3");
+    const clickSound = new Audio("click.mp3");
+    const loadSound = new Audio("loading.mp3");
+    const emptySound = new Audio("unload.mp3");
+    const spinSound = new Audio("revolver-spin.mp3");
+    const shotSound = new Audio("gunshot.mp3");
     // Establishing starting conditions
     const chambers = ["empty","empty","empty","empty","empty","empty"];
     let chamberNum = 0;
