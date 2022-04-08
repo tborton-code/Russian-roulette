@@ -65,9 +65,9 @@
             document.getElementById('text').innerHTML="click.";
             spin(1);
         } else {
+            //window.alert("BANG! 💥🤯");
             shotSound.play();
-            window.alert("BANG! 💥🤯");
-            document.getElementById('text').innerHTML="You are dead 💀";
+            document.getElementById('text').innerHTML="BANG! You are dead 💀";
             chambers[0] = "empty";
             chambersFull--;
             spin(1);
