@@ -2,6 +2,12 @@
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
       }
+    //Sound variables
+    const clickSound = new Audio("../sounds/click.mp3");
+    const loadSound = new Audio("../sounds/loading.mp3");
+    const emptySound = new Audio("../sounds/unload.mp3");
+    const spinSound = new Audio("../sounds/revolver-spin.mp3");
+    const shotSound = new Audio("../sounds/gunshot.mp3");
     // Establishing starting conditions
     const chambers = ["empty","empty","empty","empty","empty","empty"];
     let chamberNum = 0;
@@ -9,6 +15,7 @@
 
     //Reset function empties the chambers
     function reset(){
+        emptySound.play();
         document.getElementById('text').innerHTML="You've emptied all bullets";
         const chambers = ["empty","empty","empty","empty","empty","empty"];
         chambersFull = 0;
@@ -23,10 +30,12 @@
         let randomChamber = getRandomInt(6);
         if (chambers[randomChamber]==="empty"){
             chambers[randomChamber]="loaded";
+            loadSound.play();
             chambersFull++;}
         else {while (chambers[randomChamber]!=="empty"){
             randomChamber=randomChamber%6+1;
         } chambers[randomChamber]="loaded";
+        loadSound.play();
         chambersFull++;
     }
     }
@@ -35,6 +44,7 @@
         /* if called without an argument, "spins" a random number of times,
         otherwise spins x amount of times, where x = argument */
         if (!number){
+            spinSound.play();
             document.getElementById('text').innerHTML="'Round and 'round she goes...";
             for (let i=0; i<getRandomInt(13); i++){
                 chambers.push(chambers.shift())
@@ -51,10 +61,13 @@
         console.log("Pulling the trigger...");
         */
         if (chambers[0] === "empty"){
+            clickSound.play();
             document.getElementById('text').innerHTML="click.";
             spin(1);
-        } else {document.getElementById('text').innerHTML="You are dead 💀";
+        } else {
+            shotSound.play();
             window.alert("BANG!");
+            document.getElementById('text').innerHTML="You are dead 💀";
             chambers[0] = "empty";
             chambersFull--;
             spin(1);
