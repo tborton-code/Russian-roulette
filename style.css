@@ -1,0 +1,83 @@
+/* fonts from google fonts api */
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+/* background image from 
+https://www.wallpaperflare.com/silver-revolver-on-wooden-table-gun-bullet-pistol-shoot-weapon-wallpaper-zegzu/download/3024x1964 */
+html {
+    background: url("revolver.jpeg") no-repeat center fixed;
+    background-size: cover;
+  }
+
+/* no scrolling */
+html, body {
+    overflow: hidden;
+  }
+
+/* button placement */
+
+#text{
+    font-family: 'Lavishly Yours', cursive;
+    font-size:69px;
+    text-shadow: 2px 2px 2px darkgrey;
+    margin-top: 7.65%;
+    transform: rotate(2deg);
+    margin-left:40%;
+    margin-right:15%;
+}
+
+#topLeft{
+    float: left;
+    margin-bottom: 80%;
+}
+
+#topRight{
+    margin-left: 85%;
+    display: block;
+}
+
+#btmCenter{
+    width:20%;
+    margin-left:40%;
+    margin-right:40%;
+    margin-top: 24%;
+}
+
+/* button design from CSS Scan */
+.button-44 {
+  background: #e62143;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 33.4929px;
+  padding: .8em 1em;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  text-shadow: rgba(0, 0, 0, .3) 1px 1px 1px;
+  text-underline-offset: 1px;
+  transition: all .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 15%;
+  word-break: break-word;
+  border: 0;
+}
+
+.button-44:active,
+.button-44:focus {
+  border-bottom-style: none;
+  border-color: #dadada;
+  box-shadow: rgba(0, 0, 0, .3) 0 3px 3px inset;
+  outline: 0;
+}
+
+.button-44:hover {
+  border-bottom-style: none;
+  border-color: #dadada;
+}
