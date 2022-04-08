@@ -66,7 +66,7 @@
             spin(1);
         } else {
             shotSound.play();
-            window.alert("BANG! 💥");
+            window.alert("BANG! 💥🤯");
             document.getElementById('text').innerHTML="You are dead 💀";
             chambers[0] = "empty";
             chambersFull--;
