@@ -66,6 +66,7 @@ html, body {
   width: 15%;
   word-break: break-word;
   border: 0;
+  z-index: 5;
 }
 
 .button:active,
@@ -92,16 +93,20 @@ html, body {
   top: 50%; 
   left: 50%;
   transform: translate(-50%,-50%);
+  z-index: 1;
 }
 
 .blood-svg {
   opacity: 0;
+  z-index: 1;
 }
 
 .blood-splash-2 {
   width: 70vmax;
+  z-index: 1;
 }
 
 .blood-splash-3 {
   width: 60vmax;
+  z-index: 1;
 }
