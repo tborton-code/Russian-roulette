@@ -18,30 +18,29 @@ html, body {
     font-family: 'Lavishly Yours', cursive;
     font-size:69px;
     text-shadow: 2px 2px 2px darkgrey;
-    margin-top: 7.65%;
     transform: rotate(2deg);
-    margin-left:40%;
-    margin-right:13%;
+}
+.bottom{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 150px;
 }
 
-#topLeft{
-    float: left;
-    margin-bottom: 80%;
+.middle{
+  display: flex;
+  min-height: 314px;
+  text-align: center;
+  margin: 30px 20px 0;
 }
 
-#topRight{
-    margin-left: 85%;
-    display: block;
-}
-
-#btmCenter{
-    width:20%;
-    margin-left:80%;
-    margin-top: 18%;
+.top{
+  display: flex;
+  justify-content: space-around;
 }
 
 /* button design from CSS Scan */
-.button-44 {
+.button {
   background: #e62143;
   border-radius: 11px;
   box-sizing: border-box;
@@ -49,7 +48,7 @@ html, body {
   cursor: pointer;
   display: flex;
   font-family: Mija,-apple-system,BlinkMacSystemFont,Roboto,"Roboto Slab","Droid Serif","Segoe UI",system-ui,Arial,sans-serif;
-  font-size: 20px;
+  font-size: 40%;
   font-weight: 700;
   justify-content: center;
   line-height: 33.4929px;
@@ -68,19 +67,19 @@ html, body {
   border: 0;
 }
 
-.button-44:active,
-.button-44:focus {
+.button:active,
+.button:focus {
   border-bottom-style: none;
   border-color: #dadada;
   box-shadow: rgba(0, 0, 0, .3) 0 3px 3px inset;
   outline: 0;
 }
 
-.button-44:active{
+.button:active{
   transform: translateY(4px);
 }
 
-.button-44:hover {
+.button:hover {
   border-bottom-style: none;
   border-color: #dadada;
 }
