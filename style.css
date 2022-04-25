@@ -93,13 +93,16 @@ html, body {
     width: 21%;
   }
   .middle{
-    margin: 117px 20px 0;
+    margin: 97px 20px 0;
+  }
+  .top{
+    margin: 20px 0 0;
   }
 }
 /*Repositions text if screen size is more than 972 pixels*/
 @media all and (min-width: 972px){
   .middle{
-    margin: 150px 20px 0;
+    margin: 130px 20px 0;
   }
 }
 
