@@ -26,19 +26,16 @@
         if (chambersFull===6){
             document.getElementById('text').innerHTML="You've filled every chamber. Ya got a deathwish?";
             return}
-        document.getElementById('text').innerHTML="You've loaded a bullet";
-        let randomChamber = getRandomInt(6);
-        if (chambers[randomChamber]==="empty"){
-            chambers[randomChamber]="loaded";
+        for (let i=0;i<chambers.length;i++){
+        if (chambers[i]==="empty"){
+            chambers[i]="loaded";
             loadSound.play();
-            chambersFull++;}
-        else {while (chambers[randomChamber]!=="empty"){
-            randomChamber=randomChamber%6+1;
-        } chambers[randomChamber]="loaded";
-        loadSound.play();
-        chambersFull++;
+            document.getElementById('text').innerHTML="You've loaded a bullet";
+            chambersFull++;
+            spin();
+            return}}
     }
-    }
+    
     //Spin function spins the cylinder, moving the bullet(s)
     function spin(number){
         /* if called without an argument, "spins" a random number of times,
