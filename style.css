@@ -24,12 +24,12 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding-top: 200px;
+  padding-top: 25px;
 }
 
 .middle{
   display: flex;
-  min-height: 314px;
+  min-height: 424px;
   justify-content: center;
   text-align: center;
   margin: 30px 20px 0;
