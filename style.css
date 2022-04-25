@@ -30,6 +30,7 @@ html, body {
 .middle{
   display: flex;
   min-height: 314px;
+  justify-content: center;
   text-align: center;
   margin: 30px 20px 0;
 }
