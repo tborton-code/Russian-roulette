@@ -86,6 +86,23 @@ html, body {
   border-color: #dadada;
 }
 
+/*Resizes for desktop if screen size is more than 600 pixels*/
+@media all and (min-width: 600px){
+  .button{
+    font-size: 20px;
+    width: 21%;
+  }
+  .middle{
+    margin: 117px 20px 0;
+  }
+}
+/*Repositions text if screen size is more than 972 pixels*/
+@media all and (min-width: 972px){
+  .middle{
+    margin: 150px 20px 0;
+  }
+}
+
 /*Blood from https://codepen.io/jvastos/pen/bGrvgbq*/
 .blood-svg{
   width: 40vmax;
