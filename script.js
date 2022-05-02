@@ -32,7 +32,7 @@
             loadSound.play();
             document.getElementById('text').innerHTML="You've loaded a bullet";
             chambersFull++;
-            spin();
+            spin("muted");
             return}}
     }
     
@@ -50,7 +50,13 @@
             for (let i=0; i<number; i++){
                 chambers.push(chambers.shift())
         }}
-        
+        /* if called with the argument "mute" like within the load function,
+        randomizes the cylinder without displaying the text or audio of a spin */
+        if (number === "muted"){
+            for (let i=0; i<getRandomInt(13); i++){
+                chambers.push(chambers.shift())
+            }
+        }
     }
     //Pull function pulls the trigger, resulting in a click or a death
     function pullTrigger(){
